@@ -89,10 +89,10 @@ var scp = function(client, msg) {
                 var site = "en";
                 var search = "";
 
-                if(msg.content.split(" ").length < 5) {
+                if(msg.content.split(" ").length < 4) {
                     search = msg.content.slice(14);
                 } else {
-                    site = msg.content.split(" ")[3].trim();
+                    site = msg.content.split(" ")[2].trim();
                     search = msg.content.slice(msg.content.search(site) + site.length + 1);
                 }
 
