@@ -96,6 +96,8 @@ var scp = function(client, msg) {
                     search = msg.content.slice(msg.content.search(site) + site.length + 1);
                 }
 
+                console.log(`find-pages?site=${site}&title=${encodeURI(search)}`);
+
                 options.path += `find-pages?site=${site}&title=${encodeURI(search)}`;
 
                 http.get(options, function (res) {
