@@ -21,7 +21,7 @@ var generalCommands = function(client, msg) {
 	        				    'pd post `title /; description /; #channel /; url /; thumbnail /; image` ';
 	        }
         
-            postEmbed(client, msg, msg.channel, 'Commands', commandList, null, null, null, "", null, 'Github', 'https://raw.githubusercontent.com/WhiterPL/skipbot/v1.1/commands/assets/github_white.png');
+            postEmbed(client, msg, msg.channel, 'Commands', commandList, null, null, null, "", null, 'Github', 'https://raw.githubusercontent.com/WhiterPL/skipbot/v1.1/commands/assets/github_white.png', 'https://github.com/WhiterPL/Predom');
         
         break;
         case "feedback":
