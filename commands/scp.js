@@ -110,7 +110,7 @@ var scp = function(client, msg) {
                             try {
                                 var result = JSON.parse(json);
 
-                                postEmbed(client, msg, msg.channel, result.pages[0].title, `:writing_hand: **${result.pages[0].authors[0].user}** \n :star: **${result.pages[0].rating} +**`, `${result.pages[0].site}/${result.pages[0].name}`);
+                                postEmbed(client, msg, msg.channel, result.pages[0].title, `:writing_hand: **${result.pages[0].authors[0].user}** \n :star: **${result.pages[0].rating == null ? 0 : result.pages[0].rating} +**`, `${result.pages[0].site}/${result.pages[0].name}`);
                             } catch (e) {
                                 sendMessage(client, msg, "*No results*");
                             }
