@@ -8,7 +8,7 @@ const tales = require('../assets/hplworks.json');
 const monsters = require('../assets/hplmonsters.json');
 const words = require('../assets/hplwords.json');
 
-var lovercraft = function(client, msg) {
+const lovercraft = function(client, msg) {
     if(msg.content.split(" ").length < 3) {
         var desc =  "Howard Phillips Lovecraft (August 20, 1890 – March 15, 1937) was an American writer of weird and horror fiction, who is known for his creation of what became the Cthulhu Mythos. \n" +
                      "— [Wikipedia](https://en.wikipedia.org/wiki/H._P._Lovecraft) \n \n" +

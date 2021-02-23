@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-function pageEmbed(index, pages) {
+function pageEmbed(client, msg, index, pages) {
     msg.channel.send(new Discord.MessageEmbed()
                     .setColor('#21d92a')
                     .setTitle(pages[index].title)
@@ -34,12 +34,18 @@ function pageEmbed(index, pages) {
                             }
                         });
                     });
+
+                    client.on("messageDelete", async (deletedMsg) => {
+                        if(deletedMsg == msg) {
+                            embed.delete();
+                        }
+                    });
                 });
 }
 
-var postPageEmbed = function(client, msg, pages) {
+const postPageEmbed = function(client, msg, pages) {
 
-    pageEmbed(0, pages);
+    pageEmbed(client, msg, 0, pages);
 };
 
 module.exports = postPageEmbed;

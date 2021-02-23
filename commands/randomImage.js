@@ -1,7 +1,7 @@
 const req = require('request');
 const postEmbed = require('../util/postEmbed');
 
-var randomImage = function(client, msg) {
+const randomImage = function(client, msg) {
 
     LookForImage();
 

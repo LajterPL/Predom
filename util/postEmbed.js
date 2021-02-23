@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-var postEmbed = function(client, msg, channel, title, desc, link = null, thumbnail = null, image = null, footerName = "", footerImage = null, authorName = "", authorImage = null, authorLink = null) {
+const postEmbed = function(client, msg, channel, title, desc, link = null, thumbnail = null, image = null, footerName = "", footerImage = null, authorName = "", authorImage = null, authorLink = null) {
   try {
     channel.send(new Discord.MessageEmbed()
         .setColor('#377fb2')

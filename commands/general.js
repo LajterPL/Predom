@@ -4,7 +4,7 @@ const sendMessage = require('../util/sendMessage');
 const randomImage = require('./randomImage');
 const customEmbed = require('./customEmbed');
 
-var generalCommands = function(client, msg) {
+const generalCommands = function(client, msg) {
     switch(msg.content.split(" ")[1]) {
         case "help":
 

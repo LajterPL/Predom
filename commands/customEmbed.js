@@ -1,6 +1,6 @@
 const postEmbed = require("../util/postEmbed.js");
 
-var customEmbed = function(client, msg) {
+const customEmbed = function(client, msg) {
 	if(!msg.member.roles.cache.some(role => role.permissions.has(0x8))) return;
 
 	var args = msg.content.split("/;");

@@ -5,7 +5,7 @@ const sendMessage = require('../util/sendMessage');
 
 const words = require('../assets/scpwords.json');
 
-var scp = function(client, msg) {
+const scp = function(client, msg) {
     if(msg.content.split(" ").length < 3) {
         var desc =  "The SCP Wiki is a collaborative urban fantasy writing website about the fictional SCP Foundation, a secretive organization that contains anomalous or supernatural items and entities away from the eyes of the public. \n" +
                     " — [SCP wiki](http://scp-wiki.wikidot.com/about-the-scp-foundation) \n \n" + 
