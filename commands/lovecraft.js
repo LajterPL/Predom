@@ -42,7 +42,7 @@ const lovercraft = function(client, msg) {
             case "monster":
                 var randomMonster = monsters.monsters[Math.floor((Math.random() * monsters.monsters.length))];
                 try {
-                    postEmbed(client, msg, msg.channel, randomMonster.title, "", `https://lovecraft.fandom.com${randomMonster.length}`);
+                    postEmbed(client, msg, msg.channel, randomMonster.title, "", `https://lovecraft.fandom.com${randomMonster.link}`);
                 } catch (e) {console.error(e)}
             break;
             case "search":
